@@ -1,5 +1,6 @@
 import './App.css'
-import RecipeCard from './components/RecipeCard'
+import { Routes, Route } from 'react-router-dom'
+import RecipeDetail from './components/RecipeDetail'
 import Home from './pages/Home'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/recipe/:id" element={<RecipeCard />} />
+      <Route path="/recipe/:id" element={<RecipeDetail />} />
     </Routes>
   )
 }
