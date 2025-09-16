@@ -12,7 +12,7 @@ function RecipeDetail() {
    useEffect(()=>{
     const fetchRecipe = async()=>{
         try{
-            const response = await axios.get(`http://localhost:3000/api/recipe/${id}`)
+            const response = await axios.get(`https://food-mood-h5sv.vercel.app/api/recipe/${id}`)
             setRecipe(response.data);
         }catch(err){
             setError("Failer to fetch recipe");

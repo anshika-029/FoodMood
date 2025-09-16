@@ -15,7 +15,7 @@ const Home = () => {
 
   // Fetch recipes once
   useEffect(() => {
-    axios.get("http://localhost:3000/api/recipes")
+    axios.get("https://food-mood-h5sv.vercel.app/api/recipes")
       .then(res => {
         setRecipes(res.data);
         setFilteredRecipes(res.data);
